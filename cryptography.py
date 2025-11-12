@@ -30,9 +30,6 @@ def vigenere_cipher(text, password):
 		current_key = list_of_keys[index % len(list_of_keys)]
 		crypted_text += cesar_cipher(text,current_key)
 	return(crypted_text)
-		
-
-
 
 
 
