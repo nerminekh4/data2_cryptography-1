@@ -28,12 +28,11 @@ def vigenere_cipher(text, password):
 	crypted_text = []
 	for index, char in enumerate(text):
 		current_key = list_of_keys[index % len(list_of_keys)]
-		crypted_text += cesar_cipher(text,current_key)
+		crypted_text.append(cesar_cipher(text,current_key))
 	return(crypted_text)
 
 
-
-
+	
 
 
 
@@ -60,4 +59,4 @@ if __name__ == "__main__":
 # 	print(initial_message == message)
 
 # 	hack_cesar_cipher(crypted_text, alphabet=string.printable) # exo3
-
+	pass
